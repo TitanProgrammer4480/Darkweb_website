@@ -1,0 +1,13 @@
+run = "bash run.sh"
+
+hidden = ["tor", ".torrc"]
+[nix]
+channel = "stable-21_11"
+
+[[ports]]
+localPort = 80
+externalPort = 3000
+
+[[ports]]
+localPort = 65535
+externalPort = 80
